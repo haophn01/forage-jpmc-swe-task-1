@@ -1,0 +1,24 @@
+From 7668401644f70ddd43668dc30abb98f70c95a684 Mon Sep 17 00:00:00 2001
+From: Hao Phan <rinnphan01@gmail.com>
+Date: Sat, 10 Aug 2024 15:55:20 -0700
+Subject: [PATCH] Add comment on client3.py
+
+---
+ client3.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/client3.py b/client3.py
+index 52c3837..42ef03a 100644
+--- a/client3.py
++++ b/client3.py
+@@ -52,6 +52,7 @@ def getRatio(price_a, price_b):
+ 
+ # Main
+ if __name__ == "__main__":
++    # Main has also been modified prior to task 1.
+     # Query the price once every N seconds.
+     for _ in iter(range(N)):
+         quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
+-- 
+2.45.2.windows.1
+
